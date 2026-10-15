@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>MeduZa</title>
+    <link rel="stylesheet" href="./lending.css">
+</head>
+<body>
+<div class="content-wrapper">
+<header>
+    <a id="meduza-header" href="/">MeduZa</a>
+    <input type="checkbox" id="check" class="header_checkbox">
+    <label for="check" class="check_button" aria-label="Открыть меню">
+        <span aria-hidden="true">☰</span>
+    </label>
+    <nav id="home">
+        <a href="#">НОВОСТИ</a>
+        <a href="#">ИСТОРИИ</a>
+        <a href="#">РАЗБОР</a>
+        <a href="#">ИГРЫ</a>
+        <a href="#">ШАПИТО</a>
+        <a href="#">ПОДКАСТЫ</a>
+    </nav>
+    <div class="nav-bar-wrapper">
+        EN
+        <div class="divider"></div>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+    </div>
+</header>
+<main>
+    <div class="currency-bar">
+        <span class="currency">63.33 </span>
+        <span class="currency">72.22</span>
+
+        <div class="currency-bar-checkbox-container">
+            <label for="currency-bar-checkbox">ПОКАЗЫВАТЬ ПО ПОРЯДКУ</label>
+            <input id="currency-bar-checkbox" type="checkbox">
+        </div>
+    </div>
+    <div class="headlines-container">
+        <article class="card card--hero">
+            <h1 class="card__title">Владимир Путин подал иск к Фонду борьбы с коррупцией</h1>
+            <time class='card__time'>7 часов назад</time>
+        </article>
+
+        <div class="headlines-grid-container">
+        <article class="card first-headline-in-grid">
+            <h2 class="card__title">В Госдуме предложили...</h2>
+            <time class='card__time'>7 часов назад</time>
+        </article>
+        <article class="card">
+            <h2 class="card__title">В Госдуме предложили...</h2>
+            <time class='card__time'>7 часов назад</time>
+        </article>
+        <article class="card">
+            <h2 class="card__title">В Госдуме предложили...</h2>
+            <time class='card__time'>7 часов назад</time>
+        </article>
+            <article class="card">
+                <h2 class="card__title">В Госдуме предложили...</h2>
+                <time class='card__time'>7 часов назад</time>
+            </article>
+            <article class="card">
+                <h2 class="card__title">В Госдуме предложили...</h2>
+                <time class='card__time'>7 часов назад</time>
+            </article>
+        </div>
+
+        <div class="headlines-grid-container">
+            <article class="card first-headline-in-grid">
+                <h2 class="card__title">Минцифры подготовило законопроект о маркировке видеоконтента</h2>
+                <time class='card__time'>7 часов назад</time>
+            </article>
+            <article class="card">
+                <h2 class="card__title">В Госдуме предложили...</h2>
+                <time class='card__time'>7 часов назад</time>
+            </article>
+            <article class="card">
+                <h2 class="card__title">В Госдуме предложили...</h2>
+                <time class='card__time'>7 часов назад</time>
+            </article>
+            <article class="card">
+                <h2 class="card__title">В Госдуме предложили...</h2>
+                <time class='card__time'>7 часов назад</time>
+            </article>
+            <article class="card">
+                <h2 class="card__title">В Госдуме предложили...</h2>
+                <time class='card__time'>7 часов назад</time>
+            </article>
+        </div>
+    </div>
+</main>
+<footer>
+<div class="footer-lists-container">
+    <div>
+    <ul class="footer-list">
+        <li class="footer-list__heading">Рубрикатор</li>
+        <li class="footer-list__item"><a href="#">Новости</a></li>
+        <li class="footer-list__item"><a href="#">Истории</a></li>
+        <li class="footer-list__item"><a href="#">Разбор</a></li>
+        <li class="footer-list__item"><a href="#">Игры</a></li>
+        <li class="footer-list__item"><a href="#">Шапито</a></li>
+        <li class="footer-list__item"><a href="#">Подкасты</a></li>
+    </ul>
+    <ul class="footer-list">
+        <li class="footer-list__heading">Приложения</li>
+        <li class="footer-list__item"><a href="#">iOS</a></li>
+        <li class="footer-list__item"><a href="#">Android</a></li>
+    </ul>
+    </div>
+    <div>
+    <ul class="footer-list">
+        <li class="footer-list__heading">Социальные сети</li>
+        <li class="footer-list__item"><a href="#">Facebook</a></li>
+        <li class="footer-list__item"><a href="#">Twitter</a></li>
+        <li class="footer-list__item"><a href="#">Twitter Шапито</a></li>
+        <li class="footer-list__item"><a href="#">ВКонтакте</a></li>
+        <li class="footer-list__item"><a href="#">ВКонтакте-Новости</a></li>
+        <li class="footer-list__item"><a href="#">ВКонтакте-Шапито</a></li>
+        <li class="footer-list__item"><a href="#">YouTube</a></li>
+        <li class="footer-list__item"><a href="#">Instagram</a></li>
+        <li class="footer-list__item"><a href="#">Одноклассники</a></li>
+        <li class="footer-list__item"><a href="#">Medium</a></li>
+    </ul>
+    </div>
+    <div>
+    <ul class="footer-list">
+        <li class="footer-list__heading">Telegram</li>
+        <li class="footer-list__item"><a href="#">Meduza Live</a></li>
+        <li class="footer-list__item"><a href="#">Вечерняя Медуза</a></li>
+        <li class="footer-list__item"><a href="#">Срочные новости</a></li>
+        <li class="footer-list__item"><a href="#">Все новости</a></li>
+        <li class="footer-list__item"><a href="#">Шапито</a></li>
+        <li class="footer-list__item"><a href="#">Бот</a></li>
+    </ul>
+    <ul class="footer-list">
+        <li class="footer-list__heading">Уведомления</li>
+        <li class="footer-list__item"><a href="#">RSS</a></li>
+    </ul>
+    </div>
+    <div>
+    <ul class="footer-list">
+        <li class="footer-list__heading">Наши проекты</li>
+        <li class="footer-list__item"><a href="#">Конференция «Шторм»</a></li>
+        <li class="footer-list__item"><a href="#">Школа «Ферма»</a></li>
+        <li class="footer-list__item"><a href="#">MeduzaCare</a></li>
+    </ul>
+    <ul class="footer-list">
+        <li class="footer-list__heading">Редакция</li>
+        <li class="footer-list__item"><a href="#">Контакты редакции</a></li>
+        <li class="footer-list__item"><a href="#">SecureDrop</a></li>
+    </ul>
+    </div>
+    <div>
+    <ul class="footer-list">
+        <li class="footer-list__heading">Реклама</li>
+        <li class="footer-list__item"><a href="#">Реклама на «Медузе»</a></li>
+        <li class="footer-list__item"><a href="#">Прайс-лист</a></li>
+        <li class="footer-list__item"><a href="#">Примеры нативной рекламы</a></li>
+        <li class="footer-list__item"><a href="#">Требования к баннерам</a></li>
+        <li class="footer-list__item"><a href="#">Написать в рекламный отдел</a></li>
+    </ul>
+    <ul class="footer-list">
+        <li class="footer-list__heading">Персональные данные</li>
+        <li class="footer-list__item"><a href="#">Правила обработки</a></li>
+        <li class="footer-list__item"><a href="#">Использование куки</a></li>
+    </ul>
+        </div>
+</div>
+    <div class="footer__bottom">
+        <hr>
+        <p class="footer__copyright">Спасибо Giphy за гифки! Нашли ошибку? Выделите её и нажмите Ctrl+Enter © 2019 Meduza</p>
+    </div>
+</footer>
+</div>
+</body>
+</html>

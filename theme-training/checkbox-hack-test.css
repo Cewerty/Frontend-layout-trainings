@@ -1,0 +1,92 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+input, select, textarea {
+    font-family: inherit;
+}
+
+video, canvas, audio, img, picture {
+    display: block;
+    max-width: 100%;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+body {
+    line-height: 1.5;
+    font-family: system-ui, Roboto, sans-serif;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.burger-checkbox {
+    display: none;
+}
+
+.burger-button {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        position: relative;
+        padding-inline: 1rem;
+    }
+
+    /* 2. Настраиваем кнопку-бургер */
+    .burger-button {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+        order: 10;
+        margin-right: auto;
+        user-select: none;
+        align-self: auto;
+    }
+
+    /* 3. НАСТОЯЩЕЕ СКРЫТИЕ МЕНЮ */
+    #home {
+        display: none; /* <-- ВОТ ЭТО СКРЫВАЕТ МЕНЮ ПО УМОЛЧАНИЮ */
+        /*position: absolute;*/
+        /*top: 100%;*/
+        /*left: 0;*/
+        width: 100%;
+        background-color: #111111;
+        flex-direction: column;
+        padding: 0.5rem 0;
+        z-index: 100;
+        border-bottom: 2px solid #d5a732;
+        transition: ease-in 0.1s;
+    }
+
+    #home > a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0.85rem 1rem;
+        color: white;
+        background-color: black;
+
+    }
+
+    /* 4. Показываем меню при клике (селекторы теперь совпадают с HTML) */
+    .burger-checkbox:checked ~ #home {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        transition: ease-in 0.1s;
+    }
+}
