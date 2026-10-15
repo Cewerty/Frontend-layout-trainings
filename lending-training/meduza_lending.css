@@ -352,10 +352,16 @@ main {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 0.5rem;
+        padding: 1.25rem 0.75rem;
     }
 
     .first-headline-in-grid {
         grid-row: span 1;
+    }
+
+    .card--hero .card__title {
+        font-size: clamp(1.4rem, 4.5vw, 2.3rem);
+        padding: 1rem 0.5rem;
     }
 
 }
