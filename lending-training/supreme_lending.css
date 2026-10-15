@@ -1,0 +1,91 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    background-color: red;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, li, ol {
+    list-style: none;
+}
+
+img, video, picture, svg {
+    display: block;
+    max-width: 100%;
+}
+
+textarea, input, button {
+    font: inherit;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Space Mono', 'Courier New', monospace;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+    line-height: 1.5;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("./tagged wall.jpg");
+    padding-bottom: 2rem;
+
+}
+
+header {
+    margin-top: 5.5rem;
+    /*width: 100%;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+main {
+    line-height: 2;
+    font-weight: 400;
+    margin-top: 5rem;
+}
+
+.nav-link {
+    transition: background-color 0.2s ease-out;
+}
+
+.nav-link:hover, a.nav-link:focus-visible {
+    background: red;
+    outline: none;
+}
+
+.media-wrapper {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+}
+
+@media (min-width: 720px) {
+    header {
+        margin-top: 8rem;
+    }
+
+    main {
+        margin-top: 4rem;
+    }
+
+    .media-wrapper {
+        margin-top: 3rem;
+    }
+}
